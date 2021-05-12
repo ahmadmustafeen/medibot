@@ -9,6 +9,7 @@
 import React from 'react';
 import {
   View,
+  StatusBar
 } from 'react-native';
 
 import {
@@ -26,7 +27,6 @@ import { navigationRef } from './NavigationService';
 const App = () => {
   return (
     <View>
-      <StatusBar barStyle="light-content" />
       <Navigator ref={navigationRef} />
     </View>
   )
