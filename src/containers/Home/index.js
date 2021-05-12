@@ -6,7 +6,7 @@ const Home = props => {
         <View>
             <Text>
                 ASDAS
-</Text>
+            </Text>
         </View>
     )
 }

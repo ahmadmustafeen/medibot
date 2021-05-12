@@ -21,13 +21,16 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import Navigator from './src/navigator';
 import { navigationRef } from './NavigationService';
+import SignIn from './src/containers/SignIn';
+import Home from './src/containers/Home';
 
 
 
 const App = () => {
   return (
     <View>
-      <Navigator ref={navigationRef} />
+      {/* <Navigator ref={navigationRef} /> */}
+      <SignIn />
     </View>
   )
 };

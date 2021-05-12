@@ -17,7 +17,6 @@ import {
 const Stack = createStackNavigator();
 
 export const DashboardNav = () => {
-
     return (
         <Stack.Navigator
             screenOptions={{

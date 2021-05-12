@@ -6,7 +6,7 @@ const SignIn = props => {
         <View>
             <Text>
                 SignIn
-</Text>
+            </Text>
         </View>
     )
 }
