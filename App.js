@@ -8,8 +8,7 @@
 
 import React from 'react';
 import {
-  View,
-  StatusBar
+  View, StatusBar
 } from 'react-native';
 
 import {
@@ -22,15 +21,15 @@ import {
 import Navigator from './src/navigator';
 import { navigationRef } from './NavigationService';
 import SignIn from './src/containers/SignIn';
-import Home from './src/containers/Home';
 
 
 
 const App = () => {
   return (
     <View>
-      {/* <Navigator ref={navigationRef} /> */}
+      <StatusBar barStyle="light-content" />
       <SignIn />
+      {/* <Navigator ref={navigationRef} /> */}
     </View>
   )
 };

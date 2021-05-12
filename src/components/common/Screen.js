@@ -31,7 +31,7 @@ const Screen = (props) => {
   };
   const [verticalOffSet, setVerticalOffSet] = useState(false)
   return (
-    <>
+    <View style={props.backgroundColor && { backgroundColor: 'red' }}>
       {getComponent('header').length ? (
         <View style={styles.header}>{getComponent('header')}</View>
       ) : null}
@@ -97,7 +97,7 @@ const Screen = (props) => {
         <View style={styles.footer}>{getComponent('footer')}</View>
       ) : null}
       {/* </ScrollView> */}
-    </>
+    </View>
   );
 };
 
@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
   },
   footer: {
     marginTop: 0,
-    paddingVertical: heightPercentageToDP(3)
+    paddingVertical: hp(3)
   },
 });
 

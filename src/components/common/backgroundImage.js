@@ -5,13 +5,13 @@ import { Screen } from './Screen';
 const BackgroundImage = (props) => {
   const { children, source, resizeMode, noPadding } = props;
   return (
-    <ImageBackground
-      {...props}
-      style={styles.bgImage}
-      resizeMode={resizeMode || 'stretch'}
-      source={source || require('../../assets/images/background.jpg')}>
-      <Screen noPadding={noPadding}>{children}</Screen>
-    </ImageBackground>
+    // <ImageBackground
+    //   {...props}
+    //   style={styles.bgImage}
+    //   resizeMode={resizeMode || 'stretch'}
+    //   source={source || require('../../assets/images/background.jpg')}>
+    <Screen noPadding={noPadding}>{children}</Screen>
+    // </ImageBackground>
   );
 };
 
